@@ -48,10 +48,12 @@ test date should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
 and then results would be found in `codes_SelfDACE/stage2/data/result/low_eval`.
 
 ## Train Stage-I (only enhancing luminance)
-1. you should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize them to 512x512.
-   Or you could download it directly from [SCIE_part1_ZeroDCE_version](https://github.com/Developer-Zer0/ZeroDCE). But if you want to use it in your work, please cite [SCIE_part1](https://github.com/csjcai/SICE).
+1. you should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize all images to 512x512.
+   Or you could download it directly from [SCIE_part1_ZeroDCE_version](https://github.com/Developer-Zer0/ZeroDCE).
 
-2.
+   If you want to use it in your work, please cite [SCIE_part1](https://github.com/csjcai/SICE).
+
+3.
 ```
 cd ./stage1
 python train_1stage.py
