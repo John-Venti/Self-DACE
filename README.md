@@ -3,8 +3,10 @@ Official pythorth version for Self-Reference Deep Adaptive Curve Estimation for 
 
 Paper is avalible at [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
 
-
-![demo](demo4git/demo1.png)  
+<figure class="half">
+    <img src="demo4git/demo1.png">
+    <img src="demo4git/demo2.png">
+</figure>
 
 
 # Citation
