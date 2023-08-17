@@ -23,6 +23,8 @@ P.S. those are applied to a 3x1200×900 image.
 
 ## Visual Comparison on LIME
 ![vscom](demo4git/visual.png)
+The blue box zooms in the complex light and dark junction of the input image.
+Image of Ours∗ is the output only from Stage-I.
 
 # How to use it
 ## Prerequisite
