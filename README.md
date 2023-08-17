@@ -30,7 +30,7 @@ and if you use `psnr` in `tensorflow`, the calculation is
 ```
 without a foctor to amplify it.
 
-Thereofore, the metric values are different from other papers', but ours is in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
+Thereofore, the metric values are different from other papers', but ours are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
 ## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
 ![size](demo4git/com2.png) 
