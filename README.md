@@ -8,6 +8,11 @@ Paper is avalible at [arXiv version - Self-Reference Deep Adaptive Curve Estimat
 ---|---
 ![demo_3](demo4git/demo3.png) | ![demo_4](demo4git/demo4.png) 
 
+Visual comparison with original low-light image
+on LOL and SCIE dataset. The enhanced images of our
+method are on the top-right corners, and the input low-light
+images are on the bottom-left corners.
+
 # Comparison
 ## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
 ![metrics](demo4git/com1.png) 
