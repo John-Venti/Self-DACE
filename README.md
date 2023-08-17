@@ -14,7 +14,18 @@ Paper is avalible at [arXiv version - Self-Reference Deep Adaptive Curve Estimat
 
 P.S. We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
 For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find psnr is higher than ours. 
-This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`.
+This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`,
+and if you use `psnr` in `tensorflow`, the calculation is 
+```
+    mse = math_ops.reduce_mean(math_ops.squared_difference(a, b), [-3, -2, -1])
+    psnr_val = math_ops.subtract(
+        20 * math_ops.log(max_val) / math_ops.log(10.0),
+        np.float32(10 / np.log(10)) * math_ops.log(mse),
+        name='psnr')
+```
+without a foctor to amplify it.
+
+Thereofore, the metric values are different from other papers', but ours is in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
 ## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
 ![size](demo4git/com2.png) 
@@ -23,6 +34,7 @@ P.S. those are applied to a 3x1200×900 image.
 
 ## Visual Comparison on LIME
 ![vscom](demo4git/visual.png)
+
 The blue box zooms in the complex light and dark junction of the input image.
 Image of Ours∗ is the output only from Stage-I.
 
@@ -38,7 +50,7 @@ pip install -r ./requirements.txt
 cd ./stage1
 python test_1stage.py
 ```
-test date should be placed in `codes_SelfDACE/stage1/data/test_data/low_eval`,
+test dates should be placed in `codes_SelfDACE/stage1/data/test_data/low_eval`,
 and then results would be found in `codes_SelfDACE/stage1/data/result/low_eval`.
 
 ## Test both Stage-I and Stage-II (enhancing luminance and denoising)
@@ -46,7 +58,7 @@ and then results would be found in `codes_SelfDACE/stage1/data/result/low_eval`.
 cd ./stage2
 python test_1stage.py
 ```
-test date should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
+test dates should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
 and then results would be found in `codes_SelfDACE/stage2/data/result/low_eval`.
 
 ## Train Stage-I (only enhancing luminance)
