@@ -3,9 +3,26 @@ Official pythorth version for Self-Reference Deep Adaptive Curve Estimation for 
 
 Paper is avalible at [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
 
+# Demo
 ![demo_1](demo4git/demo1.png) | ![demo_2](demo4git/demo2.png) 
 ---|---
 ![demo_3](demo4git/demo3.png) | ![demo_4](demo4git/demo4.png) 
+
+# Comparison
+## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
+![metrics](demo4git/com1.png) 
+
+P.S. We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
+For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find psnr is higher than ours. 
+This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`.
+
+## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
+![size](demo4git/com2.png) 
+
+P.S. those are applied to a 3x1200×900 image.
+
+
+
 
 # Citation
 If you find our work useful for your research, please cite our paper
