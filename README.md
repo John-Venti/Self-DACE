@@ -34,6 +34,7 @@ Thereofore, the metric values are different from other papers', but ours is in l
 
 ## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
 ![size](demo4git/com2.png) 
+
 Ours∗ is the model of Stage-I, and Ours is the model including Stage-I and Stage-II.
 
 P.S. those are applied to a 3x1200×900 image.
