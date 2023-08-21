@@ -21,7 +21,7 @@ images are on the bottom-left corners.
 
 Ours* is the result only from Stage-I.
 
-P.S. We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
+Note: We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
 For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find psnr is higher than ours. 
 This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`,
 and if you use `psnr` in `tensorflow`, the calculation is 
@@ -41,7 +41,7 @@ Thereofore, the metric values are different from other papers', but ours are in 
 
 Ours∗ is the model of Stage-I, and Ours is the model including Stage-I and Stage-II.
 
-P.S. those are applied to a 3x1200×900 image.
+Those are applied to a 3x1200×900 image.
 
 ## Visual Comparison on LIME
 ![vscom](demo4git/visual.png)
