@@ -22,7 +22,7 @@ Ours* is the result only from Stage-I.
 Note: 
 
 We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
-For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find psnr is higher than ours. 
+For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find `PSNR` is higher than ours. 
 This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`.
 
 And if you use `psnr` in `tensorflow`, the calculation is 
