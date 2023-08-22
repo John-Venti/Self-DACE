@@ -23,8 +23,9 @@ Note:
 
 We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
 For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find psnr is higher than ours. 
-This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`,
-and if you use `psnr` in `tensorflow`, the calculation is 
+This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`.
+
+And if you use `psnr` in `tensorflow`, the calculation is 
 ```
     mse = math_ops.reduce_mean(math_ops.squared_difference(a, b), [-3, -2, -1])
     psnr_val = math_ops.subtract(
@@ -37,7 +38,7 @@ without a foctor to amplify it.
 Thereofore, the metric values are different from other papers', but ours are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
 ## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
-![size](demo4git/com2.png) 
+![size](demo4git/com2.png#pic_center) 
 
 Ours∗ is the model of Stage-I, and Ours is the model including Stage-I and Stage-II.
 
@@ -61,24 +62,22 @@ pip install -r ./requirements.txt
 cd ./stage1
 python test_1stage.py
 ```
-test dates should be placed in `codes_SelfDACE/stage1/data/test_data/low_eval`,
-and then results would be found in `codes_SelfDACE/stage1/data/result/low_eval`.
+Test dates should be placed in `codes_SelfDACE/stage1/data/test_data/low_eval`,
+And then results would be found in `codes_SelfDACE/stage1/data/result/low_eval`.
 
 ## Test both Stage-I and Stage-II (enhancing luminance and denoising)
 ```
 cd ./stage2
 python test_1stage.py
 ```
-test dates should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
-and then results would be found in `codes_SelfDACE/stage2/data/result/low_eval`.
+Test dates should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
+And then results would be found in `codes_SelfDACE/stage2/data/result/low_eval`.
 
 ## Train Stage-I (only enhancing luminance)
 1.
 
-you should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize all images to 512x512.
-Or you could download it directly from [SCIE_part1_ZeroDCE_version](https://github.com/Developer-Zer0/ZeroDCE), of which iamges have been cropped to 512x512 already.
-
-If you want to use it in your work, please cite [SCIE_part1](https://github.com/csjcai/SICE).
+You should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize all images to 512x512.
+Or you could download it directly from [SCIE_part1_ZeroDCE_version](https://github.com/Developer-Zer0/ZeroDCE), of which iamges have been cropped to 512x512 already. If you want to use it in your work, please cite [SCIE_part1](https://github.com/csjcai/SICE).
 
 2.
 ```
