@@ -19,9 +19,10 @@ images are on the bottom-left corners.
 
 Ours* is the result only from Stage-I.
 
-Note: 
+## Note: 
 
 We use `PSNR` and `SSIM` functions from `tenosrflow`, and the two metrics from different toolboxs could be significant different.
+
 For example, if you use `peak_signal_noise_rati` from `skimage.metrics`, you will find `PSNR` is higher than ours. 
 This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`, where `data_range = dmax - dmin`, and `err` is a scale factor `err = mean_squared_error(image_true, image_test)`.
 
@@ -35,7 +36,9 @@ And if you use `psnr` in `tensorflow`, the calculation is
 ```
 without a foctor to amplify it.
 
-Thereofore, the metric values are different from other papers', but ours are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
+Thereofore, the metric values calculated by `tensorflow` are essentially lower than by `skimage`.
+
+Our metric values are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
 ## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
 ![size](demo4git/com2.png#pic_center) 
