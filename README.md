@@ -28,11 +28,8 @@ This is because in `skimage.metrics`, `psnr = np.log10((data_range ** 2) / err)`
 
 And if you use `psnr` in `tensorflow`, the calculation is 
 ```
-    mse = math_ops.reduce_mean(math_ops.squared_difference(a, b), [-3, -2, -1])
-    psnr_val = math_ops.subtract(
-        20 * math_ops.log(max_val) / math_ops.log(10.0),
-        np.float32(10 / np.log(10)) * math_ops.log(mse),
-        name='psnr')
+mse = math_ops.reduce_mean(math_ops.squared_difference(a, b), [-3, -2, -1])
+psnr_val = math_ops.subtract(20 * math_ops.log(max_val) / math_ops.log(10.0),np.float32(10 / np.log(10)) * math_ops.log(mse),name='psnr')
 ```
 without a foctor to amplify it.
 
