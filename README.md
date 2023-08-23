@@ -36,7 +36,7 @@ And if you use `psnr` in `tensorflow`, the calculation is
 ```
 without a foctor to amplify it.
 
-Thereofore, the metric values calculated by `tensorflow` are essentially lower than by `skimage`.
+Thereofore, the `PSNR` calculated by `tensorflow` are essentially lower than by `skimage`.
 
 Our metric values are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
