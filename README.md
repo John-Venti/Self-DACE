@@ -76,7 +76,7 @@ python test_1stage.py
 Test dates should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
 And then results would be found in `codes_SelfDACE/stage2/data/result/low_eval`.
 
-# How to tain it
+# How to train it
 ## Prerequisite
 ```
 cd ./codes_SelfDACE
