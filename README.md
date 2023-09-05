@@ -19,9 +19,7 @@ images are on the bottom-left corners.
 
 Ours* is the result only from Stage-I.
 
-## Note: 
-
-Our metric values are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
+- Note: Our metric values are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
 ## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
 
