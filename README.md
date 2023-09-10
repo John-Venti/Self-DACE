@@ -93,13 +93,11 @@ pip install -r ./requirements.txt
 # Citation
 If you find our work useful for your research, please cite our paper
 ```
-@misc{wen2023selfreference,
-      title={Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement}, 
-      author={Jianyu Wen and Chenhao Wu and Tong Zhang and Yixuan Yu and Piotr Swierczynski},
-      year={2023},
-      eprint={2308.08197},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@article{wen2023self,
+  title={Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement},
+  author={Wen, Jianyu and Wu, Chenhao and Zhang, Tong and Yu, Yixuan and Swierczynski, Piotr},
+  journal={arXiv preprint arXiv:2308.08197},
+  year={2023}
 }
 ```
 # Hope AI would light our unknown and unforeseeable future as well as human's as ligting the low-light image
