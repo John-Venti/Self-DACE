@@ -17,6 +17,7 @@ images are on the bottom-left corners.
 ## Demo on Improvement of Low-light Image Segmentation
 ![demo_1](visualization/vis.jpg)
 Demostration of improvement for segmentation task on Dark Face Dataset using PiClick.
+The green stars are the objects of interactive segmentation what we want to segment.
 GT is annotated manually by us.
 
 # Comparison
