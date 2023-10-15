@@ -4,6 +4,7 @@ Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for L
 - Paper is avalible at [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
 
 # Demo
+## Demo on Low-light Images
 ![demo_1](demo4git/demo1.png) | ![demo_2](demo4git/demo2.png) 
 ---|---
 ![demo_3](demo4git/demo3.png) | ![demo_4](demo4git/demo4.png) 
@@ -12,6 +13,11 @@ Visual comparison with original low-light image
 on LOL and SCIE dataset. The enhanced images of our
 method are on the top-right corners, and the input low-light
 images are on the bottom-left corners.
+
+## Demo on Low-light Image Segmentation
+![demo_1](visualization/vis.jpg)
+Demostration of improvement for segmentation task on Dark Face Dataset using PiClick.
+GT is annotated manually by us.
 
 # Comparison
 ## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
