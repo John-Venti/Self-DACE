@@ -31,9 +31,9 @@ def show_points(coords, labels, ax, marker_size=175):
     ax.scatter(neg_points[:, 0], neg_points[:, 1], color='red', marker='*', s=marker_size, edgecolor='white', linewidth=1.25)   
 
 def read_mask(mask_path: str, h: int, w: int):
-    ann = json.load(open(mask_path, 'r'))
+    ann       = json.load(open(mask_path, 'r'))
     poly_list = [np.array(_["points"], dtype=np.int32) for _ in ann]
-    mask = np.zeros((h, w), dtype=np.uint8)
+    mask      = np.zeros((h, w), dtype=np.uint8)
     cv2.fillPoly(mask, poly_list, 1)
     return mask
 
@@ -41,7 +41,7 @@ def calc_iou(mask1, mask2):
     assert mask1.shape == mask2.shape
     mask_inter = np.logical_and(mask1, mask2)
     mask_union = np.logical_or(mask1, mask2)
-    iou = np.sum(mask_inter) / np.sum(mask_union)
+    iou        = np.sum(mask_inter) / np.sum(mask_union)
     return iou
 
 def main():
@@ -65,10 +65,11 @@ def main():
 
         ori_pred_mask = read_mask(ori_pred_mask_path, h, w)
         enh_pred_mask = read_mask(enh_pred_mask_path, h, w)
-        gt_mask = read_mask(gt_mask_path, h, w)
-        iou_ori_pred = calc_iou(ori_pred_mask, gt_mask)
-        iou_enh_pred = calc_iou(enh_pred_mask, gt_mask)
+        gt_mask       = read_mask(gt_mask_path, h, w)
+        iou_ori_pred  = calc_iou(ori_pred_mask, gt_mask)
+        iou_enh_pred  = calc_iou(enh_pred_mask, gt_mask)
 
+        # Prediction w/o Self-DACE
         ax = axes[idx_ax]
         idx_ax += 1
         ax.imshow(cv2.cvtColor(ori_image, cv2.COLOR_BGR2RGB))
@@ -78,6 +79,7 @@ def main():
         show_points(np.array([IMAGE2POINTS[str(image)]]), np.array([1]), ax)
         ax.text(10, 70, f'IoU: {iou_ori_pred:.2f}', color='red', fontsize=12, fontweight='bold')
 
+        # Prediction w/ Self-DACE
         ax = axes[idx_ax]
         idx_ax += 1
         ax.imshow(cv2.cvtColor(enh_image, cv2.COLOR_BGR2RGB))
@@ -87,6 +89,7 @@ def main():
         show_points(np.array([IMAGE2POINTS[str(image)]]), np.array([1]), ax)
         ax.text(10, 70, f'IoU: {iou_enh_pred:.2f}', color='red', fontsize=12, fontweight='bold')
 
+        # GT
         ax = axes[idx_ax]
         idx_ax += 1
         ax.imshow(cv2.cvtColor(enh_image, cv2.COLOR_BGR2RGB))
