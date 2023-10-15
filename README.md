@@ -14,7 +14,7 @@ on LOL and SCIE dataset. The enhanced images of our
 method are on the top-right corners, and the input low-light
 images are on the bottom-left corners.
 
-## Demo on Low-light Image Segmentation
+## Demo on Improvement of Low-light Image Segmentation
 ![demo_1](visualization/vis.jpg)
 Demostration of improvement for segmentation task on Dark Face Dataset using PiClick.
 GT is annotated manually by us.
