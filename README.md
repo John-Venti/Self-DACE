@@ -10,22 +10,24 @@ Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for L
 ![demo_3](demo4git/demo3.png) | ![demo_4](demo4git/demo4.png) 
 
 Visual comparison with original low-light image
-on LOL and SCIE dataset. The enhanced images of our
+on [LOL](https://daooshee.github.io/BMVC2018website/) and [SCIE](https://github.com/csjcai/SICE) dataset. The enhanced images of our
 method are on the top-right corners, and the input low-light
 images are on the bottom-left corners.
 
 ## Demo on Improvement of Low-light Image Interactive Segmentation
 ![demo_2_1](visualization/vis1.jpg)
 ![demo_2_2](visualization/vis2.jpg)
-Demostration of improvement for segmentation task on Dark Face Dataset using PiClick.
+Demostration of improvement for segmentation task on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [PiClick](https://github.com/cilinyan/PiClick).
 The green stars are the objects of interactive segmentation what we want to segment.
 GT is annotated on the enhanced images manually by us.
 
 ## Demo on Improvement of Low-light Face detection
-![demo_2_1](visualization/vis1.jpg)
-![demo_2_2](visualization/vis2.jpg)
+![demo_3_1](visualization/detection1.png)
+![demo_3_2](visualization/detection2.png)
+Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [DSFD](https://github.com/Tencent/FaceDetection-DSFD).
+The red box is the where the DSFD identifies the human face, and a larger red box means it has a lower confidence score. The yellow box zooms in the region which contains human faces. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
 
-# Comparison
+# Quantitative Comparison
 ## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
 ![metrics](demo4git/com1.png) 
 
@@ -101,6 +103,8 @@ pip install -r ./requirements.txt
       cd ./stage2
       python train_2stage.py
       ```
+# Acknowledgment
+This paper gets a big inspiration from [ZeroDCE](https://github.com/Li-Chongyi/Zero-DCE).
 
 # Citation
 If you find our work useful for your research, please cite our paper
