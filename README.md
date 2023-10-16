@@ -14,6 +14,12 @@ on [LOL](https://daooshee.github.io/BMVC2018website/) and [SCIE](https://github.
 method are on the top-right corners, and the input low-light
 images are on the bottom-left corners.
 
+## Demo on Improvement of Low-light Face detection
+![demo_3_1](visualization/detection1.png)
+![demo_3_2](visualization/detection2.png)
+Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [DSFD](https://github.com/Tencent/FaceDetection-DSFD).
+The red box is the where the DSFD identifies the human face, and a larger red box means it has a lower confidence score. The yellow box zooms in the region which contains human faces. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
+
 ## Demo on Improvement of Low-light Image Interactive Segmentation
 ![demo_2_1](visualization/vis1.jpg)
 ![demo_2_2](visualization/vis2.jpg)
@@ -21,11 +27,6 @@ Demostration of improvement for segmentation task on [DarkFace Dataset](https://
 The green stars are the objects of interactive segmentation what we want to segment.
 GT is annotated on the enhanced images manually by us.
 
-## Demo on Improvement of Low-light Face detection
-![demo_3_1](visualization/detection1.png)
-![demo_3_2](visualization/detection2.png)
-Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [DSFD](https://github.com/Tencent/FaceDetection-DSFD).
-The red box is the where the DSFD identifies the human face, and a larger red box means it has a lower confidence score. The yellow box zooms in the region which contains human faces. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
 
 # Quantitative Comparison
 ## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
