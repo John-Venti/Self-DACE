@@ -14,12 +14,16 @@ on LOL and SCIE dataset. The enhanced images of our
 method are on the top-right corners, and the input low-light
 images are on the bottom-left corners.
 
-## Demo on Improvement of Low-light Image Segmentation
-![demo_1](visualization/vis1.jpg)
-![demo_1](visualization/vis2.jpg)
+## Demo on Improvement of Low-light Image Interactive Segmentation
+![demo_2_1](visualization/vis1.jpg)
+![demo_2_2](visualization/vis2.jpg)
 Demostration of improvement for segmentation task on Dark Face Dataset using PiClick.
 The green stars are the objects of interactive segmentation what we want to segment.
-GT is annotated manually by us.
+GT is annotated on the enhanced images manually by us.
+
+## Demo on Improvement of Low-light Face detection
+![demo_2_1](visualization/vis1.jpg)
+![demo_2_2](visualization/vis2.jpg)
 
 # Comparison
 ## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
