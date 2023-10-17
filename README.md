@@ -4,7 +4,7 @@ Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for L
 - Paper is avalible at [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
 
 # Demo
-## Demo on Low-light Images
+## Demo on Low-light Image Enhancement
 ![demo_1](demo4git/demo1.png) | ![demo_2](demo4git/demo2.png) 
 ---|---
 ![demo_3](demo4git/demo3.png) | ![demo_4](demo4git/demo4.png) 
