@@ -18,7 +18,7 @@ images are on the bottom-left corners.
 ![demo_3_1](visualization/detection1.png)
 ![demo_3_2](visualization/detection2.png)
 Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [DSFD](https://github.com/Tencent/FaceDetection-DSFD).
-The red box is the where the DSFD identifies the human face, and a larger red box means it has a lower confidence score. The yellow box zooms in the region which contains human faces. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
+The red box is the where the DSFD identifies the human face. The yellow box zooms in the region which contains human faces. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
 
 ## Demo on Improvement of Low-light Image Interactive Segmentation
 ![demo_2_1](visualization/vis1.jpg)
