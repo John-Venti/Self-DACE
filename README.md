@@ -29,7 +29,7 @@ GT is annotated on the enhanced images manually by us.
 
 
 # Quantitative Comparison
-## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRWand SCIE Part2 datasets.
+## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRW and SCIE Part2 datasets.
 ![metrics](demo4git/com1.png) 
 
 Ours* is the result only from Stage-I.
