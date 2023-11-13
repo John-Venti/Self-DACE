@@ -15,10 +15,11 @@ method are on the top-right corners, and the input low-light
 images are on the bottom-left corners.
 
 ## Demo on Improvement of Low-light Face detection
-![demo_3_2](visualization/detection2.png)
-![demo_3_1](visualization/detection1.png)
-Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [DSFD](https://github.com/Tencent/FaceDetection-DSFD).
-The red box is the where the DSFD identifies the human face. The yellow box zooms in the region which contains human faces. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
+![demo_3_2](visualization/darkface.png)
+Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [Retinaface](https://github.com/serengil/retinaface).
+The red box is the where the Retinaface detector identifies the human face. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
+![demo_3_1](visualization/PRC.png)
+The P-R curves and corrsponding Average Precision (AP) for Dark Face Detection task comparison.
 
 ## Demo on Improvement of Low-light Image Interactive Segmentation
 ![demo_2_1](visualization/vis1.jpg)
