@@ -19,7 +19,7 @@ images are on the bottom-left corners.
 Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [Retinaface](https://github.com/serengil/retinaface).
 The red box is the where the Retinaface detector identifies the human face. The number on the top of red box is the confidence score given by DSFD with a confidence threshold of 0.5.
 ![demo_3_1](visualization/PRC.png)
-The P-R curves and corrsponding Average Precision (AP) for Dark Face Detection task comparison.
+The P-R curves and corrsponding Average Precision (AP) for Dark Face Detection task comparison under IoU threshod equal to 0.3.
 
 ## Demo on Improvement of Low-light Image Interactive Segmentation
 ![demo_2_1](visualization/vis1.jpg)
