@@ -87,7 +87,7 @@ pip install -r ./requirements.txt
 
 ## Train Stage-I (only enhancing luminance)
 1.
-      You should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize all images to 512x512.
+      You should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize all images to 256x256.
       Or you could download it directly from [SCIE_part1_ZeroDCE_version](https://github.com/Developer-Zer0/ZeroDCE), of which iamges have been cropped to 512x512 already. If you want to use it in your work, please cite [SCIE_part1](https://github.com/csjcai/SICE).
 
 2.
