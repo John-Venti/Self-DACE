@@ -1,4 +1,4 @@
-# Self-DACE LLIE Method
+# Self-DACE LLIE Method (New version will be updated soon)
 Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement
 
 - Paper is avalible at:
@@ -30,31 +30,30 @@ Demostration of improvement for segmentation task on [DarkFace Dataset](https://
 The green stars are the objects of interactive segmentation what we want to segment.
 GT is annotated on the enhanced images manually by us.
 
+# New version Framework
+![frame](demo4git/framework.png) 
 
 # Quantitative Comparison
-## Table 1. Quantitative comparisons in terms of four full-reference image quality metrics including PSNR(dB), SSIM, LPIPS and CIEDE2000 on the LOL test, LSRW and SCIE Part2 datasets.
+Old Version:
 ![metrics](demo4git/com1.png) 
-
 Ours* is the result only from Stage-I.
+
+New Version:
+![metrics](demo4git/metrics.png) 
 
 ### Note:
 - Our metric values are in line with [Low-Light Image and Video Enhancement Using Deep Learning: A Survey](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
 
-## Table 2. Comparisons of computational complexity in termsof number of trainable parameters and FLOPs.
 
-<div align=center>
-<img src="demo4git/com2.png">
-</div>
-
-Ours∗ is the model of Stage-I, and Ours is the model including Stage-I and Stage-II. Those are applied to a 3x1200×900 image.
-
-## Visual Comparison on LIME
+## Visual Comparison on LIME (Old version)
 <div align=center>
 <img src="demo4git/visual.png">
 </div>
 
-The blue box zooms in the complex light and dark junction of the input image.
-Image of Ours∗ is the output only from Stage-I.
+## Visual Comparison on LOL (New version)
+<div align=center>
+<img src="demo4git/comparison.png">
+</div>
 
 # How to use it
 ## Prerequisite
