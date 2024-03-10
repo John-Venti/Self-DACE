@@ -50,9 +50,9 @@ New Version:
 <img src="demo4git/visual.png">
 </div>
 
-## Visual Comparison on LOL (New version)
+## Visual Comparison on SCIE (New version)
 <div align=center>
-<img src="demo4git/comparison.png">
+<img src="demo4git/com_scie.png">
 </div>
 
 # How to use it
