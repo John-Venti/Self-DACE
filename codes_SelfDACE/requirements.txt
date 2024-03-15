@@ -1,9 +1,0 @@
-tensorflow-gpu~=2.7.0
-numpy~=1.21.6
-torch~=1.13.0+cu116
-lpips~=0.1.4
-Pillow~=9.3.0
-torchvision~=0.14.0+cu116
-opencv-python~=3.4.10.37
-scikit-image~=0.19.3
-scipy~=1.7.3
