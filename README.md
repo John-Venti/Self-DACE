@@ -18,8 +18,10 @@ images are on the bottom-left corners.
 
 ## Demo on the Improvement of Low-light Face detection (New Version)
 Demostration of improvement for Dark Face Detection task ([CVPR UG2+ Challenge 2021](http://cvpr2022.ug2challenge.org/program21/track1.html)) on [DarkFace Dataset](https://www.kaggle.com/datasets/soumikrakshit/dark-face-dataset) using [Retinaface](https://github.com/deepinsight/insightface).
-
-The number on the top of red box is the confidence score given by Retinaface with a confidence threshold of 0.5.
+![demo_1](demo4git/face_1.png)
+![demo_2](demo4git/face_2.png)
+![demo_2](demo4git/face_3.png)
+The number on the top of box is the confidence score given by Retinaface with a confidence threshold of 0.5.
 
 ![demo_1](demo4git/0.25.png) | ![demo_2](demo4git/0.50.png) | ![demo_2](demo4git/0.75.png)
 ---|---|---
