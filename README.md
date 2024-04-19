@@ -1,11 +1,11 @@
 # Self-DACE LLIE Method (New version will be updated soon)
 Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement
 
-# Hope AI would illuminate our unknown and invisible path to the future as it illuminates low-light images!
-
 - Paper is avalible at:
 - Old version: [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
 - New version: will come up soon.
+
+# Hope AI would illuminate our unknown and invisible path to the future as it illuminates low-light images!
 
 # Demo
 ## Demo on Low-light Image Enhancement
