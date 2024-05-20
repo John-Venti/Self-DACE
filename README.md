@@ -1,4 +1,4 @@
-# Self-DACE LLIE Method (New version will be updated soon)
+# Self-DACE LLIE Method
 Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement
 
 - Paper is avalible at:
